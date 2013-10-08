@@ -1,0 +1,235 @@
+\documentclass[12pt,t]{beamer}
+\usepackage{graphicx}
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+
+% get rid of junk
+\usetheme{default}
+\beamertemplatenavigationsymbolsempty
+\hypersetup{pdfpagemode=UseNone} % don't show bookmarks on initial view
+
+% font
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}
+\setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
+
+% named colors
+\definecolor{offwhite}{RGB}{249,242,215}
+\definecolor{foreground}{RGB}{255,255,255}
+\definecolor{background}{RGB}{24,24,24}
+\definecolor{title}{RGB}{107,174,214}
+\definecolor{gray}{RGB}{155,155,155}
+\definecolor{subtitle}{RGB}{102,255,204}
+\definecolor{hilight}{RGB}{102,255,204}
+\definecolor{vhilight}{RGB}{255,111,207}
+\definecolor{lolight}{RGB}{155,155,155}
+%\definecolor{green}{RGB}{125,250,125}
+
+% use those colors
+\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{subtitle}{fg=subtitle}
+\setbeamercolor{institute}{fg=gray}
+\setbeamercolor{normal text}{fg=foreground,bg=background}
+\setbeamercolor{item}{fg=foreground} % color of bullets
+\setbeamercolor{subitem}{fg=gray}
+\setbeamercolor{itemize/enumerate subbody}{fg=gray}
+\setbeamertemplate{itemize subitem}{{\textendash}}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
+
+% page number
+\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+
+% add a bit of space at the top of the notes page
+\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
+
+% a few macros
+\newcommand{\bbi}{\vspace{24pt} \begin{itemize} \itemsep12pt}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ig}{\includegraphics}
+\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
+
+% title info
+\title{Statistical consulting}
+\subtitle{My experiences}
+\author{\href{http://www.biostat.wisc.edu/~kbroman}{Karl Broman}}
+\institute{\href{http://www.biostat.wisc.edu}{Biostatistics \& Medical Informatics} \\[2pt] \href{http://www.wisc.edu}{University of Wisconsin{\textendash}Madison}}
+\date{\href{http://www.biostat.wisc.edu/~kbroman}{\tt \scriptsize biostat.wisc.edu/{\textasciitilde}kbroman}}
+
+
+\begin{document}
+
+% title slide
+{
+\setbeamertemplate{footline}{} % no page number here
+\frame{
+  \titlepage
+} }
+
+
+
+\begin{frame}{My situtation}
+
+\bbi
+\item Applied statistician at a university
+\bi
+\item No formal consulting role
+\item Do my best to answer colleagues' questions
+\item Can always say no
+\ei
+\item Almost no experience with industry
+\item Almost no experience with consulting companies
+\ei
+
+\end{frame}
+
+\begin{frame}{Consulting vs. collaboration}
+
+\bbi
+\item {\color{hilight} Consulting}: short-term
+\bi
+\item Try to answer a specific question within a week or two
+\ei
+\item {\color{hilight} Collaboration}: long-term
+\bi
+\item Get to know the scientist's grander schemes
+\ei
+
+\ei
+
+\end{frame}
+
+\begin{frame}{My experience}
+
+\bbi
+\item Consulting class in graduate school at UC-Berkeley
+\bi
+\item Three times, with Andrew Gelman, Terry Speed, and David Freedman
+\ei
+\item Postdoc with a geneticist
+\bi
+\item Relatively isolated from other statisticians
+\ei
+\item Postdoc to faculty member
+\bi
+\item Steady stream of consulting experiences
+\item From courses taught, referred by dept chair, other friends, software/papers
+\ei
+\ei
+
+\end{frame}
+
+\begin{frame}{Why do it?}
+
+\bbi
+\item Learn more biology
+\item See new data
+\item Think about new problems
+\bi
+\item And it's nice to get an easy one, sometimes
+\ei
+\item Be useful (help people)
+\item Publications
+\item Leads to long-term collaboration; find out if you like the
+     people
+\ei
+\end{frame}
+
+
+\begin{frame}{The initial meeting}
+
+\bbi
+\item Listen
+\item Verify that you're following
+\item Don't be embarrassed to admit ignorance
+\item Focus particularly on:
+\bi
+\item Scientific questions
+\item Form of the data
+\item Where the data came from
+\ei
+\item I'll usually delay giving specific advice to a second session
+\ei
+\end{frame}
+
+
+\begin{frame}{Key difficulties}
+
+\bbi
+\item Admitting ignorance
+\item Getting the scientist to back way up
+\item ``I have a quick question\dots''
+\item You don't have time
+\item You see a big problem
+\item Co-authorship on publications
+\item They don't want anything fancy, and you think it's needed
+\ei
+\end{frame}
+
+\begin{frame}{How to say no}
+
+\bbi
+\item Can you find someone to take over?
+\item Give at least a rough guide
+\item My two-week rule
+\ei
+\end{frame}
+
+\begin{frame}{Disadvantages}
+
+\bbi
+\item You don't have time to do things properly
+\item You don't know what you're getting into
+\item You don't see long-term results
+\item I hate power/sample size calculations
+\ei
+\end{frame}
+
+\begin{frame}{Be self-sufficient}
+
+\bbi
+\item Learn multiple programming languages
+\bi
+\item R
+\item C/C++
+\item Perl/Ruby/Python
+\ei
+\item ``How would you like to receive the data?'' \\[12pt]
+{\color{vhilight} ``In its current form.''}
+\ei
+\end{frame}
+
+\begin{frame}{Time management}
+
+\bbi
+\item Don't let short-term things crowd out your long-term projects
+\item Save big blocks of time for yourself.
+\bi
+\item I reserve a full day each week for my own work
+\ei
+\ei
+\end{frame}
+
+\begin{frame}{Summary}
+
+\bbi
+\item Statistical consulting is fabulous
+\bi
+\item Lots of new problems
+\item Learn a lot of science
+\item Help people
+\ei
+\item Don't need to know the answer
+\bi
+\item You just need to connect the scientist to the answer
+\ei
+\ei
+\end{frame}
+
+
+\end{document}
