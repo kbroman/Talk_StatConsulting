@@ -3,7 +3,7 @@
 These are slides for a talk that I gave on 8 Oct 2013, in the
 statistical consulting course at UW&ndash;Madison.
 
-The current pdf is [here](http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf).
+The current pdf is [here](http://www.biostat.wisc.edu/~kbroman/teaching/misc/consulting.pdf).
 
 They were totally not effective. I'd presented in that course a number
 of times, but just speaking from notes, in an attempt to have an
