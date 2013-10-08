@@ -1,11 +1,27 @@
 ### Talk on &ldquo;Statistical consulting: My experiences&rdquo;
 
-These are slides for a talk that I give periodically in the
+These are slides for a talk that I gave on 8 Oct 2013, in the
 statistical consulting course at UW&ndash;Madison.
 
 The current pdf is [here](http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf).
 
-See my related [blog post](http://kbroman.wordpress.com/2013/04/02/thoughts-on-statistical-consulting/).
+They were totally not effective. I'd presented in that course a number
+of times, but just speaking from notes, in an attempt to have an
+informal discussion.
+(I had turned my notes into this
+[blog post](http://kbroman.wordpress.com/2013/04/02/thoughts-on-statistical-consulting/).)
+
+I made the slides as an experiment (but not in the formal sense).
+First, I wanted to test my
+[LaTeX](http://www.latex-project.org/)/[Beamer](http://en.wikipedia.org/wiki/Beamer_(LaTeX))-based
+template: I wondered, about 45 min before the class, whether I could
+quickly make some reasonable slides. Second, I wondered whether it
+would be useful to have slides for this presentation.
+
+The slides were reasonable; my template was easy to use. But the
+slides were unnecessary, and they interfered with the desired informal
+nature of the discussion. Fortunately, the students were really good
+and involved and asked great questions anyway.
 
 <hr/>
 
